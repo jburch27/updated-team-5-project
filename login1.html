@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+
+        function validate(){
+            let x = document.forms["myform"]["login"].value;
+            if(x=="") {
+                alert("You have to fill out")
+                return false;
+            }
+        }
+    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <style>
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+
+<h1>Login Page</h1>
+<ul>
+    <li><a href="theIndexPage.html">By Subject</a></li>
+ 
+    <li><a href="instructor.html">Search By Instructor</a></li>
+    <li><a href="academic.html">Academic Plan</a></li>
+    <li><a href="course.html">By Course ID</a></li>
+  </ul>
+
+  <div class='container'>
+
+    <form action='Select term.html'>
+
+      <label for='usrname'>Username</label>
+
+      <input type='text' id='usrname' name='usrname' required>
+
+  
+
+      <label for='psw'>Password</label>
+
+    <input type='password' id='psw' name='psw' pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' title=“Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters” required>
+
+    <input type='submit' value='Submit'>
+
+    </form>
+
+  </div>
+
+  <div id='message'>
+
+    <h3>Password must contain the following:</h3>
+
+    <p id='letter' class='invalid'>A <b>lowercase</b> letter</p>
+
+    <p id='capital' class='invalid'>A <b>capital (uppercase)</b> letter</p>
+
+    <p id='number' class='invalid'>A <b>number</b></p>
+
+    <p id='length' class='invalid'>Minimum <b>16 characters</b></p>
+
+  </div>
+
+
+
+
+
+
+ 
+
+
+  
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

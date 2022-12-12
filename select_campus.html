@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+function validate()
+{
+  if(!document.getElementById('checkbox-1').checked)
+  {
+    alert('Check the box!');
+    return false;
+  }
+
+  return true;
+}
+    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <style>
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+
+
+    
+<h1>Select Campus</h1>
+
+<form action="theIndexPage.html" name="myform" onsubmit="return validate();">
+  <input type="checkbox" name="course" id="checkbox-1">
+  <label >Online Only Classes (IvyOnline)</label><br>
+  <input type="checkbox" name="course">
+  <label> Indianapolis/Lawrence/Plainfield</label><br>
+  <input type="checkbox" name="course">
+  <label>Lafayette </label><br><br>
+  <input type="submit" value="Submit">
+</form>
+    
+
+
+</body>
+
+</html>

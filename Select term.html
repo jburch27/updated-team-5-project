@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+    function validate() {
+        var radio = document.getElementsByName("group1");
+        var form = false;
+
+        var i = 0;
+        while(!form && i < radio.length) {
+            if (radio[i].checked) form = true;
+            i++
+        }
+        if(!form) alert("must fill a bubble");
+        return form;
+    }
+ 
+    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <style>
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+
+<h1>Select Term</h1>
+
+
+<form action="Select_campus.html" name="myform" onsubmit="return  validate()">
+    <p>Please select your favorite Web language:</p>
+      <input type="radio" id="radio1" name="group1" value="1">
+      <label for="r1"> Fall 2022</label><br>
+      <input type="radio" id="radio2" name="group1" value="2">
+      <label for="r2"> Spring 2022</label><br>
+    <input type="submit" value="Submit">
+</form>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
